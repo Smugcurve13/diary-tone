@@ -1,13 +1,12 @@
 import streamlit as st
-import plotly.express as px
-import nltk
+from functions import plotfigure
 
 st.title("Diary Tone")
 
 st.subheader("Positivity")
 
-st.image("placeholder.png")
+st.plotly_chart(plotfigure('pos'))
 
 st.subheader("Negativity")
 
-st.image("placeholder.png")
+st.plotly_chart(plotfigure('neg'))

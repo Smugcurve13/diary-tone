@@ -31,8 +31,6 @@ def plotfigure(choice):
         pos_list.append(s['pos'])
         neg_list.append(s['neg'])
 
-
-
     if choice == 'pos':
         plot = px.line(x=filenames,y=pos_list,labels={'x':'Date','y':'Postivity'})
         return plot
